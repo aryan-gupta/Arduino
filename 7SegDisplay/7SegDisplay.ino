@@ -30,6 +30,23 @@ void setup() {
 }
 
 void write_hex(HEX_D hex_enum) {
+// --- 7SegDisplay/7SegDisplay.ino	2018-04-28 10:43:26.736765000 -0400
+// +++ sketch_apr23a/sketch_apr23a.ino	2018-04-28 10:37:52.161661000 -0400
+// @@ -30,6 +30,14 @@
+//  }
+
+//  void write_hex(HEX_D hex_enum) {
+// +  digitalWrite(2, LOW);
+// +  digitalWrite(3, LOW);
+// +  digitalWrite(4, LOW);
+// +  digitalWrite(5, LOW);
+// +  digitalWrite(6, LOW);
+// +  digitalWrite(7, LOW);
+// +  digitalWrite(8, LOW);
+// +
+//    int hex_num = int(hex_enum);
+
+//    digitalWrite(2, (hex_num & 0x1)? HIGH : LOW); // SEG A
   int hex_num = int(hex_enum);
   
   digitalWrite(2, (hex_num & 0x1)? HIGH : LOW); // SEG A
